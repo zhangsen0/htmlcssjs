@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>城市天气通</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <script type="text/javascript">
+
+        document.addEventListener('plusready', function(){
+
+        });
+
+    </script>
+    <link rel="stylesheet" href="common.css">
+
+</head>
+
+<body>
+<div class="header">
+    <img src="img/logo.png" class="logo">
+    <img src="img/refresh.jpg" id="refresh">
+    <span id="city"></span>  <!-- 这里可以写一个城市名称占位 -->
+    <img src="img/plus.jpg" id="next">
+</div>
+<div>
+    <img src="" id="todayPic">  <!-- 这里可以设置src属性指定一个天气图片占位 -->
+    <span id="todayInfo"></span>  <!-- 这里可以写今天的天气情况、最高最低气温占位 -->
+</div>
+<div class="future">
+    <div class="left">
+        <img src="" id="leftPic">  <!-- 这里可以设置src属性指定一个天气图片占位 -->
+        <span id="leftMain"></span>  <!-- 这里可以写明天的天气情况、最高最低气温占位 -->
+    </div>
+    <div class="right">
+        <img src="" id="rightPic">  <!-- 这里可以设置src属性指定一个天气图片占位 -->
+        <span id="rightMain"></span>  <!-- 这里可以写后天的天气情况、最高最低气温占位 -->
+    </div>
+</div>
+<div class="info">
+    <div class="title">详细信息</div>
+    <div class="infoDetail">
+        <p>风向：<span id="wind"></span></p>  <!-- 这里可以写一个风向占位-->
+        <p>风级：<span id="windScale"></span></p>  <!-- 这里可以写一个风级占位 -->
+    </div>
+</div>
+<div class="life">
+    <div class="title">生活指数</div>
+    <ul>
+        <li>
+            <img src="img/clothes.png" class="icon">
+            <p class="index">穿衣指数：<span id="dress"></span></p>  <!-- 这里可以文字占位 -->
+        </li>
+        <li>
+            <img src="img/doctor.png" class="icon">
+            <p class="index">感冒指数：<span id="flu"></span></p>
+        </li>
+        <li>
+            <img src="img/car.png" class="icon">
+            <p class="index">洗车指数：<span id="car"></span></p>
+        </li>
+        <li>
+            <img src="img/sport.png" class="icon">
+            <p class="index">运动指数：<span id="sport"></span></p>
+        </li>
+        <li>
+            <img src="img/travel.png" class="icon">
+            <p class="index">旅游指数：<span id="travel"></span></p>
+        </li>
+        <li>
+            <img src="img/sun.png" class="icon">
+            <p class="index">紫外线指数：<span id="uv"></span></p>
+        </li>
+    </ul>
+</div>
+<div></div>
+<div>
+    更新时间：<span id="updateTime"></span>  <!-- 这里可以写文字占位 -->
+</div>
+<div id="cityPage">
+    <div class="title">
+        <img src="img/left.png" id="prev">
+        <span>城市列表</span>
+    </div>
+    <ul class="cityList">
+        <li>北京</li><li>上海</li><li>广州</li><li>深圳</li>
+        <li>天津</li><li>杭州</li><li>宁波</li><li>西安</li>
+        <li>成都</li><li>沈阳</li><li>重庆</li><li>南京</li>
+        <li>武汉</li><li>苏州</li><li>厦门</li><li>抚州</li>
+        <li>济南</li><li>兰州</li><li>珠海</li><li>大理</li>
+        <li>长沙</li><li>石家庄</li><li>南昌</li><li>温州</li>
+        <li>哈尔滨</li><li>澳门</li><li>济南</li><li>合肥</li>
+    </ul>
+    <div class="search">
+        <div class="inputarea">
+            <input type="text" placeholder="国内城市中文名称" id="input">
+        </div>
+        <input type="button" value="确认" id="submit">
+        <input type="button" value="清空" id="reset">
+    </div>
+</div>
+
+<script>
+$.ajax({
+url:"https://api.seniverse.com/v3/weather/daily.json?key=你的私钥&location=shenyang",
+cache:false,
+dataType:"json",
+success:function(data){
+console.log(data);
+}
+});
+var UID = "你的公钥";
+var KEY = "你的私钥";
+var API = "https://api.seniverse.com/v3/weather/daily.json"; // 逐日天气预报API
+var LIFE = "https://api.seniverse.com/v3/life/suggestion.json"; // 生活指数API
+var loc = "shenyang"; // 城市，App启动时以沈阳为默认城市
+var jsonpCallback = function(data) {
+    $("#city").html(data.results[0].location.name); // 城市名称
+    $("#todayInfo").html("今天：" + data.results[0].daily[0].text_day + " " + data.results[0].daily[0].high + "~" + data.results[0].daily[0].low + "℃"); // 今天最高气温与最低气温
+    $("#todayPic").attr("src", "img/" + data.results[0].daily[0].code_day + ".png"); // 今天天气图标
+    $("#wind").html(data.results[0].daily[0].wind_direction); // 今天风向
+    $("#windScale").html(data.results[0].daily[0].wind_scale + "级"); // 今天风级
+    $("#leftMain").html("明天：" + data.results[0].daily[1].text_day + " " + data.results[0].daily[1].high + "~" + data.results[0].daily[1].low + "℃"); // 明天最高气温与最低气温
+    $("#leftPic").attr("src", "img/" + data.results[0].daily[1].code_day + ".png"); // 明天天气图标
+    $("#rightMain").html("后天：" + data.results[0].daily[2].text_day + " " + data.results[0].daily[2].high + "~" + data.results[0].daily[2].low + "℃"); // 后天最高气温与最低气温
+    $("#rightPic").attr("src", "img/" + data.results[0].daily[2].code_day + ".png"); // 后天天气图标
+    $("#updateTime").html(data.results[0].last_update); // 更新时间
+}
+var lifeCallback = function(data) {
+    $("#dress").html(data.results[0].suggestion.dressing.brief); // 穿衣指数
+    $("#flu").html(data.results[0].suggestion.flu.brief); // 感冒指数
+    $("#car").html(data.results[0].suggestion.car_washing.brief); // 洗车指数
+    $("#sport").html(data.results[0].suggestion.sport.brief); // 运动指数
+    $("#travel").html(data.results[0].suggestion.travel.brief); // 旅游指数
+    $("#uv").html(data.results[0].suggestion.uv.brief); // 紫外线强度指数
+}
+function update() {
+    var ts = Math.floor(new Date().getTime() / 1000); // 获取当前时间戳
+    var str = "ts=" + ts + "&ttl=30&uid=" + UID; // 构造验证参数字符串
+// 使用 HMAC-SHA1 方式，以 API 密钥（key）对上一步生成的参数字符串（raw）进行加密
+// 并将加密结果用 base64 编码，并做一个 urlencode，得到签名 sig
+    var sig = CryptoJS.HmacSHA1(str, KEY).toString(CryptoJS.enc.Base64);
+    sig = encodeURIComponent(sig);
+    str = str + "&sig=" + sig;
+// 构造请求url
+    var url = API + "?location=" + loc + "&" + str + "&callback=jsonpCallback"; // 构造天气情况请求url
+    var lifeUrl = LIFE + "?location=" + loc + "&" + str + "&callback=lifeCallback"; // 构造生活指数请求url
+// 向HTML中动态插入script标签，通过JSONP的方式进行调用
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = url; // 天气情况的请求url
+    $('body').append(script);
+    var scriptLife = document.createElement('script');
+    scriptLife.type = 'text/javascript';
+    scriptLife.src = lifeUrl; // 生活指数的请求url
+    $('body').append(scriptLife);
+}
+update(); // 函数构建完毕后需要调用一次，在App启动时我们就能看到沈阳的天气情况
+
+</script>
+
+</body>
+</html>

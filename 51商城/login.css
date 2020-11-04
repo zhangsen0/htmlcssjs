@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.containter
+{
+    height: 760px;
+    width: 100%;
+    border: 1px solid red;
+    background-color: #f5f5ff;
+}
+.containter .header
+{
+    height: 70px;
+    width: 1000px;
+    border: 1px solid red;
+    margin: auto;
+}
+.containter .main
+{
+    height: 480px;
+    width: 100%;
+    background-color: #ff7b50;
+    margin-top: 10px;
+}
+.containter .main .main_mid
+{
+    height: 100%;
+    width: 1000px;
+    margin: auto;
+    border: 1px solid red;
+}
+.containter .main .main_mid .main_mid_img
+{
+    border: 1px solid red;
+    height: 100%;
+    width: 600px;
+}
+.containter .main .main_mid .main_mid_form
+{
+    height: 100%;
+    width: 400px;
+    border: 1px solid red;
+    float: right;
+    margin-top: -481px;
+}
+.containter .main .main_mid .main_mid_form .main_mid_form_main
+{
+    height: 80%;
+    width: 88%;
+
+    margin: auto;
+    border: 1px solid red;
+    position: relative;
+    top: 40px;
+    background-color: white;
+}
+.containter .main .main_mid .main_mid_form .main_mid_form_main h3
+{
+    text-align: center;
+    font-size: 22px;
+    line-height: 20px;
+    margin-top: 15px;
+}
+.containter .main .main_mid .main_mid_form .main_mid_form_main .user
+{
+    height: 100px;
+    width:260px ;
+    border: 1px solid red;
+    margin: auto;
+    margin-top: 25px;
+    background-color: #e4e4f2;
+}
+.containter .main .main_mid .main_mid_form .main_mid_form_main .user img
+{
+    height: 30px;
+    width: 30px;
+}
+.containter .main .main_mid .main_mid_form .main_mid_form_main .user input
+{
+    height: 40px;
+    width: 210px;
+}
+.containter .main .main_mid .main_mid_form .main_mid_form_main .user_addation
+{
+    border: 1px solid red;
+    height: 50px;
+    width: 260px;
+    margin: auto;
+    line-height: 50px;
+
+}
+.containter .main .main_mid .main_mid_form .main_mid_form_main .user_addation i a
+{
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: 14px;
+    line-height: 50px;
+}
+.containter .main .main_mid .main_mid_form .main_mid_form_main .login
+{
+    border: 1px solid red;
+    height: 50px;
+    width: 260px;
+    margin: auto;
+}
+.containter .main .main_mid .main_mid_form .main_mid_form_main h4
+{
+    font-size: 14px;
+    font-weight: initial;
+    color: #80818c;
+    margin-top: 15px;
+    margin-left: 10px;
+    line-height: 15px;
+}
+.containter .main .main_mid .main_mid_form .main_mid_form_main ul li
+{
+    list-style: none;
+    display: block;
+    float: left;
+    border: 1px solid red;
+    width: 100px;
+    height: 30px;
+    margin-top: 20px;
+   margin-left: 10px;
+}
+.containter .main .main_mid .main_mid_form .main_mid_form_main ul li img
+{
+    height: 20px;
+    width: 20PX;
+
+}
+.containter .main .main_mid .main_mid_form .main_mid_form_main ul li a
+{
+    text-decoration: none;
+    text-align: center;
+    color: #1a1a1a;
+    line-height: 20px;
+}
+.login_tail
+{
+    height: 100px;
+    width: 80%;
+    margin: auto;
+    border: 1px solid red;
+    margin-top: 50px;
+}
+.login_tail ul li
+{
+    display: block;
+    height: 25px;
+    width: 100px;
+    border: 1px solid red;
+    border-right: #75767f 1px solid;
+    float: left;
+    list-style: none;
+    text-align: center;
+}
+.login_tail ul li a
+{
+    text-decoration: none;
+    font-size: 14px;
+    color: #8d8d8d;
+}
+.login_tail hr
+{
+    position: relative;
+    width: 100%;
+    color: #363636;
+   top: 20px;
+}
+.login_tail i
+{
+    position: relative;
+    top: 30px;
+    text-decoration: none;
+    color: #363636;
+    font-size: 14px;
+}

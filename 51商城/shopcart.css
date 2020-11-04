@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.containter
+{
+    width: 100%;
+    height: 1200px;
+    border: red 1px solid;
+}
+.header
+{
+    width: 80%;
+    height: 35px;
+    border: blue 1px solid;
+    margin: auto;
+}
+.header_left
+{
+    /*border: red 1px solid;*/
+    height: 100%;
+    width: 250px;
+    margin-left: 50px;
+}
+.header_left a
+{
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 35px;
+    color: red;
+}
+.header_right
+{
+    /*border: red 1px solid;*/
+    height: 100%;
+    width: 420px;
+    float: right;
+    margin-top: -37px;
+}
+.header_right ul li
+{
+    float: left;
+    list-style: none;
+    /*border: red 1px solid;*/
+    display: block;
+    height: 35px;
+    width: 80px;
+}
+.header_right ul li a
+{
+    text-decoration: none;
+    font-size: 14px;
+    color: red;
+    line-height: 35px;
+}
+.header_right ul li img
+{
+    height: 15px;
+    width: 15px;
+
+}
+.search
+{
+    border: red 1px solid;
+    height: 100px;
+    width:80% ;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+.logobig
+{
+    height: 90px;
+    width: 200px;
+    background: url(image/logobig.png) no-repeat;
+}
+.search .search_form
+{
+    height:46px ;
+    width: 679px;
+    /*border: 2px red solid;*/
+    float: right;
+    margin-top: -70px;
+}
+.search .search_form .search_form_left
+{
+    height: 46px;
+    width: 525px;
+    border: red 2px solid;
+}
+.search .search_form .search_form_right
+{
+    height: 50px;
+    width: 150px;
+    background-color: red;
+    border: red 2px solid;
+    padding-top: 1px;
+    font-size: 18px;
+    color: #fffdff;
+}
+.content
+{
+    border: 1px red solid;
+    height: 800px;
+    width: 70%;
+    margin: auto;
+    margin-top: 200px;
+}
+.content .commodity_information
+{
+    border: 1px red solid;
+    width: 100%;
+    height: 600px;
+
+}
+.content .commodity_information .discounts
+{
+    height: 50px;
+    width: 100%;
+    background-color: #e6e7f3;
+    border: 1px black solid;
+}
+.content .commodity_information ul li
+{
+    float: left;
+    border: 1px red solid;
+    list-style: none;
+    display: block;
+    height: 310px;
+    width: 130px;
+
+
+}
+.content .commodity_information ul li ul li p
+{
+    line-height: 100px;
+    text-align: center;
+    font-size: 14px;
+    color: #5f5f6a;
+}
+.content .commodity_information ul li ul li img
+{
+    height: 80px;
+    width: 80px;
+    margin-top: 15px;
+    margin-left: 20px;
+
+}
+.content .commodity_information ul li ul li
+{
+    display: block;
+    height: 100px;
+    width: 100%;
+}
+.content .commodity_information ul li ul li a
+{
+    text-decoration: none;
+    font-size: 14px;
+    color: #222229;
+    display: block;
+    margin-top: -80px;
+    margin-left: 150px;
+}
+.a_del
+{
+    text-decoration: none;
+    font-size: 14px;
+    color: #000000;
+    line-height: 20px;
+   position: relative;
+    display: block;
+    top: 60px;
+
+}
+.content .commodity_information ul li ul li em
+{
+    text-decoration: none;
+    font-size: 14px;
+    color: #636375;
+    display: block;
+    margin-top: 0px;
+    margin-left: 150px;
+}
+.content .commodity_information .num
+{
+    height: 30px;
+    width: 120px;
+    border: 1px red solid;
+    margin: 35px auto auto;
+}
+.content .commodity_information .num .num_1
+{
+    height: 27px;
+    width: 27px;
+    background-color: #cfd0dc;
+    float: left;
+    margin: auto;
+    line-height: 27px;
+    text-align: center;
+}
+.content .commodity_information .num input
+{
+    height: 25px;
+    width: 50px;
+    margin-left: 5px;
+}
+.content .commodity_information .num .num_2
+{
+    height: 25px;
+    width: 25px;
+    background-color: #cfd0dc;
+    float: right;
+    margin: auto;
+    line-height: 27px;
+    text-align: center;
+}
+.content .commodity_information  .commodity_information_1
+{
+    display: block;
+    height: 100px;
+    width: 520px;
+}
+.login_tail
+{
+    height: 100px;
+    width: 80%;
+    margin: auto;
+    border: 1px solid red;
+    margin-top: 0px;
+}
+.login_tail ul li
+{
+    display: block;
+    height: 25px;
+    width: 100px;
+    border: 1px solid red;
+    border-right: #75767f 1px solid;
+    float: left;
+    list-style: none;
+    text-align: center;
+}
+.login_tail ul li a
+{
+    text-decoration: none;
+    font-size: 14px;
+    color: #8d8d8d;
+}
+.login_tail hr
+{
+    position: relative;
+    width: 100%;
+    color: #363636;
+    top: 20px;
+}
+.login_tail i
+{
+    position: relative;
+    top: 30px;
+    text-decoration: none;
+    color: #363636;
+    font-size: 14px;
+}

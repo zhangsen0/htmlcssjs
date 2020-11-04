@@ -1,0 +1,443 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.containter
+{
+    width: 100%;
+    height: 1900px;
+    border: red 1px solid;
+}
+.header
+{
+    width: 80%;
+    height: 35px;
+    border: blue 1px solid;
+    margin: auto;
+}
+.header_left
+{
+    /*border: red 1px solid;*/
+    height: 100%;
+    width: 250px;
+    margin-left: 50px;
+}
+.header_left a
+{
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 35px;
+    color: red;
+}
+.header_right
+{
+    /*border: red 1px solid;*/
+    height: 100%;
+    width: 420px;
+    float: right;
+    margin-top: -37px;
+}
+.header_right ul li
+{
+    float: left;
+    list-style: none;
+    /*border: red 1px solid;*/
+    display: block;
+    height: 35px;
+    width: 80px;
+}
+.header_right ul li a
+{
+    text-decoration: none;
+    font-size: 14px;
+    color: red;
+    line-height: 35px;
+}
+.header_right ul li img
+{
+    height: 15px;
+    width: 15px;
+
+}
+.search
+{
+    border: red 1px solid;
+    height: 100px;
+    width:80% ;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+.logobig
+{
+    height: 90px;
+    width: 200px;
+    background: url(image/logobig.png) no-repeat;
+}
+.search .search_form
+{
+    height:46px ;
+    width: 679px;
+    /*border: 2px red solid;*/
+    float: right;
+    margin-top: -70px;
+}
+.search .search_form .search_form_left
+{
+    height: 46px;
+    width: 525px;
+    border: red 2px solid;
+}
+.search .search_form .search_form_right
+{
+    height: 50px;
+    width: 150px;
+    background-color: red;
+    border: red 2px solid;
+    padding-top: 1px;
+    font-size: 18px;
+    color: #fffdff;
+}
+.content
+{
+    width: 70%;
+    height: 1000px;
+    border: 1px red solid;
+    margin: auto;
+    margin-top: 160px;
+}
+.content h3
+{
+    font-size: 14px;
+    font-weight:revert;
+    line-height: 20px;
+    margin-top: 20px;
+
+}
+.content hr
+{
+    color: #50515b;
+    font-weight: 200;
+    margin-top: 10px;
+}
+
+.content #new_adress
+{
+    position: relative;
+    height: 25px;
+    width: 100px;
+    background-color: #fe4912;
+    color: white;
+    border: #fe4912 1px solid;
+   top:-20px;
+    margin-left: 100px;
+}
+.content .information
+{
+    height: 170px;
+    width: 1030px;
+    border: 1px red solid;
+}
+.content .information ul li
+{
+    display: block;
+    height: 160px;
+    width: 258px;
+    border: 1px red solid;
+    float: left;
+    list-style: none;
+    margin-left: 5px;
+}
+.content .information ul li h3
+{
+    font-size: 14px;
+    font-weight:revert;
+    line-height: 40px;
+
+}
+.content .information ul li p
+{
+    color: #484951;
+    font-size: 14px;
+}
+.content .information ul li .default_address
+{
+    width: 60px;
+    height: 22px;
+background-color: #b8b9c5;
+    color: white;
+    position: relative;
+    top: -70px;
+    right: -130px;
+    font-size: 14px;
+    text-align: center;
+}
+.content .information ul li .edit_bottom
+{
+    border: 1px red solid;
+    height: 20px;
+    width: 160px;
+    margin-top: 2px;
+    margin-left: 80px;
+}
+.content .information ul li .edit_bottom ul li
+{
+    display: block;
+    height: 20px;
+    width: 50px;
+    border: 1px red solid;
+    float: left;
+    list-style: none;
+    text-align: center;
+    margin: auto;
+
+
+}
+.content .information ul li .edit_bottom ul li a
+{
+
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: 12px;
+    font-weight: inherit;
+}
+.content .logistics_pay
+{
+    border: 1px red solid;
+    height: 100px;
+    width: 1020px;
+    margin-top: 20px;
+}
+.yuantong
+{
+    height: 35px;
+    width: 70px;
+    background: url("image/kuaidi.png") 0px -465px no-repeat ;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+.content .logistics_pay a
+{
+    text-decoration: none;
+    text-align: center;
+    color: #1a1a1a;
+
+
+}
+.content .logistics_pay a i
+{
+    display: block;
+    margin-top: -30px;
+    font-size: 14px;
+    font-weight: initial;
+    color: #000000;
+}
+.content .logistics_pay ul li
+{
+    display: block;
+    border: 1px red solid;
+    float: left;
+    height: 45px;
+    width: 200px;
+}
+.content .logistics_pay a img
+{
+    margin-left: 10px;
+}
+.content .commodity_information
+{
+    border: 1px red solid;
+    width: 100%;
+    height: 350px;
+}
+.content .commodity_information ul li
+{
+    float: left;
+    border: 1px red solid;
+    list-style: none;
+    display: block;
+    height: 310px;
+    width: 130px;
+
+
+}
+.content .commodity_information ul li ul li p
+{
+    line-height: 100px;
+    text-align: center;
+    font-size: 14px;
+    color: #5f5f6a;
+}
+.content .commodity_information ul li ul li img
+{
+    height: 80px;
+    width: 80px;
+margin-top: 15px;
+    margin-left: 20px;
+
+}
+.content .commodity_information ul li ul li
+{
+    display: block;
+    height: 100px;
+    width: 100%;
+}
+.content .commodity_information ul li ul li a
+{
+    text-decoration: none;
+    font-size: 14px;
+    color: #222229;
+    display: block;
+    margin-top: -80px;
+    margin-left: 150px;
+}
+.content .commodity_information ul li ul li em
+{
+    text-decoration: none;
+    font-size: 14px;
+    color: #636375;
+    display: block;
+    margin-top: 0px;
+    margin-left: 150px;
+}
+.content .commodity_information .num
+{
+    height: 30px;
+    width: 120px;
+    border: 1px red solid;
+    margin: 35px auto auto;
+}
+.content .commodity_information .num .num_1
+{
+    height: 27px;
+    width: 27px;
+    background-color: #cfd0dc;
+    float: left;
+    margin: auto;
+    line-height: 27px;
+    text-align: center;
+}
+.content .commodity_information .num input
+{
+    height: 25px;
+    width: 50px;
+  margin-left: 5px;
+}
+.content .commodity_information .num .num_2
+{
+    height: 25px;
+    width: 25px;
+    background-color: #cfd0dc;
+    float: right;
+    margin: auto;
+    line-height: 27px;
+    text-align: center;
+}
+.content .commodity_information  .commodity_information_1
+{
+    display: block;
+    height: 100px;
+    width: 520px;
+}
+.background_commodity_information_1
+{
+    background-color: #e6e7f3;
+}
+.content .content_tail
+{
+    height: 400px;
+    width: 100%;
+    border: 1px red solid;
+    margin-top: 22px;
+}
+.content .content_tail .note
+{
+    height:240px ;
+    width:48% ;
+    border: 1px red solid;
+    float: left;
+}
+.content .content_tail .discounts
+{
+    height:400px ;
+    width:35% ;
+    border: 1px red solid;
+    float: right;
+}
+.content .content_tail .discounts .discounts_header
+{
+    border: 1px red solid;
+    height: 100px;
+    width: 220px;
+    float: right;
+    margin-top: 10px;
+}
+.content .content_tail .discounts .discounts_header i
+{
+    font-size: 14px;
+    text-decoration: none;
+    line-height: 25px;
+
+}
+.content .content_tail .discounts .discounts_header select
+{
+    font-size: 12px;
+    line-height: 25px;
+
+}
+.content .content_tail .discounts .sure
+{
+    border: 2px red solid;
+    height: 180px;
+    width: 100%;
+    margin-top: 150px;
+}
+.content .content_tail .discounts .sure_button
+{
+    display: block;
+    height: 40px;
+    width: 150px;
+    float: right;
+    background-color: #fe7a5f;
+    margin-top: 10px;
+}
+
+.login_tail
+{
+    height: 100px;
+    width: 80%;
+    margin: auto;
+    border: 1px solid red;
+    margin-top: 500px;
+}
+.login_tail ul li
+{
+    display: block;
+    height: 25px;
+    width: 100px;
+    border: 1px solid red;
+    border-right: #75767f 1px solid;
+    float: left;
+    list-style: none;
+    text-align: center;
+}
+.login_tail ul li a
+{
+    text-decoration: none;
+    font-size: 14px;
+    color: #8d8d8d;
+}
+.login_tail hr
+{
+    position: relative;
+    width: 100%;
+    color: #363636;
+    top: 20px;
+}
+.login_tail i
+{
+    position: relative;
+    top: 30px;
+    text-decoration: none;
+    color: #363636;
+    font-size: 14px;
+}

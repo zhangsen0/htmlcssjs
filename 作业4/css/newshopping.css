@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.cont{
+    width: 1200px;
+    height: 620px;
+    margin: 0 auto;
+    background: rgb(220,255,255);
+}
+h1{
+    padding: 30px 50px 30px 525px;
+
+}
+.bottom{
+    height: 500px;
+}
+dl{
+    float: left;
+    height: 511px;
+    width: 394px;
+    margin-left: 4px;
+    background: #fff;
+}
+dd{
+    border:1px dashed #f0f;
+    border-radius: 10px;
+    pading:10px 90px;
+    margin: 5px;
+}
+img{
+    width: 250px;
+    padding: 50px 65px;
+}
+dl dd{
+    padding: 0px 70px;
+}
